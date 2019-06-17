@@ -7,31 +7,47 @@
 </head>
 
 <body>
-
-  <div id="cover">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-          <h1 class="display-4">The Tip Calculator</h1>
-          <p>Help better your budgeting experience</p>
+  <div id="holder">
+      <div id="cover">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+              <h1 class="display-4">The Tip Calculator</h1>
+              <p>Help better your budgeting experience</p>
+          </div>
+        </div>
+        <div id="divide"></div>
+        <br>
+          <div id="forums">
+            <form>
+                <div class="form-group">
+                    <label for="formGroupExampleInput1">How much was your bill?</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Bill Amount">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Rate your services</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="--Choose an Option--">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="formGroupExampleInput3">How many people are sharing this bill?</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Number of people">
+                </div>
+                <br>
+                <div id="button">
+                  <button type="button" class="btn btn-outline-success btn-lg btn-block">Calculate</button>
+                </div>
+            </form>
+          </div>
+          <div id="answerSpace">
+              <div id="answer"></div>
+          </div>
       </div>
-    </div>
-        <form>
-            <div class="form-group">
-                <label for="formGroupExampleInput1">How much was your bill?</lable>
-                <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Bill Amount">
-            </div>
-
-            <div class="form-group">
-                <label for="formGroupExampleInput2">Rate your services</lable>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="--Choose an Option--">
-            </div>
-
-            <div class="form-group">
-                <label for="formGroupExampleInput3">How many people are sharing this bill?</lable>
-                <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Number of people">
-            </div>
-        </form>
+      <div id="space">
+      </div>
   </div>
+
+
 
 
 

@@ -1,10 +1,61 @@
+/* 
+body {
+  background-color: red;
+} */
+
+#holder {
+  /* border: 3px solid orange; */
+  background-position: center;
+
+  /* margin-left: 20%; */ */
+}
 
 #cover {
   border: 3px solid;
   width: 60%;
   margin-left: 20%;
+  margin-top: 10%;
 }
 
+#divide {
+  border: 3px dotted green;
+  width: 98%;
+  margin-left: 1%;
+}
+
+#forums {
+  /* border: 3px solid green; */
+  width: 90%;
+  margin-left: 5%;
+}
+
+#button {
+  /* border: 3px solid red; */
+  width: 80%;
+  margin-left: 8%;
+}
+
+#answerSpace{
+  /* border: 3px solid lime; */
+  width: 98%;
+  height: 300px;
+  margin-left: 1%;
+}
+
+#answer{
+  border: 3px dotted green;
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+#space{
+  /* border: 3px solid;
+  background-color: red; */
+  width: 98%;
+  height: 140px;
+}
 /* .jumbotron jumbotron-fluid {
     border: 5px solid blue;
 } */
