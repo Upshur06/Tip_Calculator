@@ -6,6 +6,8 @@ var numOfPeople = document.getElementById("formGroupExampleInput3");
 
 var selectBtn = document.getElementById("pickBtn");
 
+var clearBtn = document.getElementById("redoBtn");
+
 var showAnswer = document.getElementById("answer");
 
 var rateService = document.getElementById("inputGroupSelect01");
@@ -19,35 +21,31 @@ function tipRate(){
   var halfPercent = (parseFloat(billAmount.value) + parseFloat(billAmount.value * 0.05))/ parseFloat(numOfPeople.value);
   var zeroPercent = (parseFloat(billAmount.value) + parseFloat(billAmount.value * 0.0))/ parseFloat(numOfPeople.value);
     if(rateService.value === "1"){
-      console.log(threePercent.toFixed(2) + " per person!");
+      showAnswer.innerHTML = threePercent.toFixed(2) + " per person!";
     } else if(rateService.value === "2"){
-      console.log(twoPercent.toFixed(2) + " per person!");
+      showAnswer.innerHTML = twoPercent.toFixed(2) + " per person!";
     }else if(rateService.value === "3"){
-      console.log(onePercent.toFixed(2) + " per person!");
+      showAnswer.innerHTML = onePercent.toFixed(2) + " per person!";
     }else if(rateService.value === "4"){
-    console.log(halfPercent.toFixed(2) + " per person!");
+    showAnswer.innerHTML = halfPercent.toFixed(2) + " per person!";
     }else if(rateService.value === "5"){
-      console.log(zeroPercent.toFixed(2) + " per person!");
+      showAnswer.innerHTML = zeroPercent.toFixed(2) + " per person!";
     }else{
-      console.log("Please Make a Selection")
+      showAnswer.innerHTML = "Please Make a Selection";
     }
 };
 
-
-// function amount(){
-//   if(billAmount){
-//     console.log(billAmount.value);
-//   }
-// };
-
-// function headCount(){
-//   if(numOfPeople){
-//     console.log(numOfPeople.value);
-//   }
-// };
+function clear(){
+  billAmount.value = "";
+  numOfPeople.value = "";
+  rateService.selectedIndex = 0;
+  showAnswer.innerHTML = "";
+};
 
 selectBtn.addEventListener("click", function(){
-  // headCount();
   tipRate();
-  // amount();
+});
+
+clearBtn.addEventListener("click", function(){
+  clear();
 });
